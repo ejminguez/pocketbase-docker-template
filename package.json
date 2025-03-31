@@ -1,0 +1,23 @@
+{
+    "name": "pocketbase-docker-template",
+    "private": true,
+    "version": "0.0.1",
+    "description": "A template for a dockerized pocketbase.",
+    "scripts": {
+        "dev": "npm docker:start || npm docker:run",
+        "docker:build": "docker build -t docker-pocketbase.",
+        "docker:run": "docker run --name docker-pocketbase -d -p 8090:8090 -v ./pb_data:/pb/pb_data -v ./pb_migrations:/pb/pb_migrations docker-pocketbase",
+        "docker:start": "docker start docker-pocketbase",
+        "docker:stop": "docker stop docker-pocketbase",
+        "docker:rm": "docker rm docker-pocketbase"
+    },
+    "author": "ejminguez",
+    "license": "MIT",
+    "keywords": [
+        "pocketbase",
+        "CMS",
+        "deployment",
+        "CI/CD",
+        "docker"
+    ]
+}
