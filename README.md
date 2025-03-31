@@ -1,4 +1,4 @@
-### Containerize Pocketbase BaaS through Docker
+### Containerize Pocketbase BaaS using Docker
 
 ```
     "scripts": {
