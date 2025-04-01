@@ -21,6 +21,7 @@ COPY ./pb_migrations /pb/pb_migrations
 # uncomment to copy the local pb_hooks dir into the container
 COPY ./pb_hooks /pb/pb_hooks
 
+# expose to port 8090 since pocketbase uses 8090 as endpoint
 EXPOSE 8090
 
 # start PocketBase
