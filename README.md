@@ -25,7 +25,8 @@
 ``` docker buildx build -t [image name] . ```
 
 ### run docker container
-``` docker run --name [container name] -p 8090:8090 [image name] ```
+``` docker run --name [container name] -d -p 8090:8090 [image name] ```
+``` docker logs [container name] ```
 
 ### start and stop container
 ```
