@@ -22,10 +22,10 @@
 
 ### build image
 
- ```   docker buildx build -t [image name] . ```
+``` docker buildx build -t [image name] . ```
 
 ### run docker container
-```    docker run --name [container name] -p 8090:8090 [image name] ```
+``` docker run --name [container name] -p 8090:8090 [image name] ```
 
 ### start and stop container
 ```
@@ -34,9 +34,7 @@
 ```
 
 ### remove container
-```
-    docker rm [container name]
-```
+``` docker rm [container name] ```
 
 ### to create your first superuser account
 - Launch the URL given in the console then manually change the URL from ``` 0.0.0.0:8090 to localhost:8090 ```
