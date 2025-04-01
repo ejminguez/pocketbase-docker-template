@@ -10,3 +10,20 @@
         "docker:rm": "docker rm docker-pocketbase"
     }
 ```
+
+## to start
+```
+    docker buildx build -t [image name] .
+    docker run --name [container name] -p 8090:8090 [image name]
+```
+
+## run and stop container
+```
+    docker start [container name]
+    docker stop [container name]
+```
+
+## remove container
+```
+    docker rm [container name]
+```
