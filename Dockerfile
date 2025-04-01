@@ -25,4 +25,7 @@ COPY ./pb_hooks /pb/pb_hooks
 EXPOSE 8090
 
 # start PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090"]
+# CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090"]
+COPY entrypoint.sh /pb/entrypoint.sh
+RUN chmod +x /pb/entrypoint.sh
+ENTRYPOINT ["/pb/entrypoint.sh"]
