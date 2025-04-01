@@ -11,13 +11,13 @@
     }
 ```
 
-## to start
+## to run
 ```
     docker buildx build -t [image name] .
     docker run --name [container name] -p 8090:8090 [image name]
 ```
 
-## run and stop container
+## start and stop container
 ```
     docker start [container name]
     docker stop [container name]
