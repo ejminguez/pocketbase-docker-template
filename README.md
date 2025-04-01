@@ -1,5 +1,6 @@
-### Containerize Pocketbase BaaS using Docker
+# Containerize Pocketbase BaaS using Docker
 
+## You can use npm commands
 ```
     "scripts": {
         "dev": "npm run docker:start || npm run docker:run",
@@ -10,26 +11,35 @@
         "docker:rm": "docker rm docker-pocketbase"
     }
 ```
+- ``` npm run dev ```
+- ``` npm run docker:build ```
+- ``` npm run docker:run ```
+- ``` npm run docker:start ```
+- ``` npm run docker:stop ```
+- ``` npm run docker:rm ```
 
-## to run
-```
-    docker buildx build -t [image name] .
-    docker run --name [container name] -p 8090:8090 [image name]
-```
+## Docker CLI
 
-## start and stop container
+### build image
+
+ ```   docker buildx build -t [image name] . ```
+
+### run docker container
+```    docker run --name [container name] -p 8090:8090 [image name] ```
+
+### start and stop container
 ```
     docker start [container name]
     docker stop [container name]
 ```
 
-## remove container
+### remove container
 ```
     docker rm [container name]
 ```
 
-## to create your first superuser account
-- Launch the URL given in the console then manually change the URL from 0.0.0.0:8090 to localhost:8090
+### to create your first superuser account
+- Launch the URL given in the console then manually change the URL from ``` 0.0.0.0:8090 to localhost:8090 ```
 - You can also create your first superuser by running: 
 - ``` /pb/pocketbase superuser upsert [EMAIL] [PASSWORD] ```
 
