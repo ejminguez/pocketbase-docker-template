@@ -27,3 +27,10 @@
 ```
     docker rm [container name]
 ```
+
+## to create your first superuser account
+- Launch the URL given in the console then manually change the URL from 0.0.0.0:8090 to localhost:8090
+- You can also create your first superuser by running: 
+- ``` /pb/pocketbase superuser upsert [EMAIL] [PASSWORD] ```
+
+### THANK YOU MWA MWA <3
